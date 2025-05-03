@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Photoalbum</title>
+    <link rel="icon" type="image/x-icon" href="./img/favicon.svg">
+    <link rel="stylesheet" href="./fonts/font.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/header-footer.css">
+    <script src="./overlay.js"></script>
+</head>
+<body onload="render()">
+    <header>
+        <div>
+           <a href="./index.html"><img src="./img/Fotogram_Logo.svg" alt="Logo" class="logo"></a>
+        </div>
+    </header>
+    <main class="extra-padding-bottom">
+        
+        <section id="content_one"  class="img-container">
+        </section>
+
+        <div onclick="toggleOverlayOff(event)"  class="overlay" id="overlay">
+            <div class="overlay_background" >
+                <img onclick="toggleOverlayOff(event)" src="./img/x.svg" alt="schließen" class="close-icon">
+                <img onclick="previousImg()" alt="zurück" src="./img/chevron-left.svg" class="icon" id="preview-btn">
+                <div class="overlayimg">
+                    <img src="" class="overlay_img" id="overlayImg">
+                </div>
+                <img onclick="nextImg()" alt="weiter" src="./img/chevron-right.svg" class="icon" id="next-btn">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="legal">
+            <a href="./impressum.html" class="links">Impressum</a>
+            <div class="break"></div>
+            <a href="./datenschutz.html" class="links">Datenschutz</a>
+        </div>
+        <span>(c) Copyright 2025 | Anna Sürken</span>
+    </footer>
+</body>
+</html>

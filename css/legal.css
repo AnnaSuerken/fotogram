@@ -1,0 +1,62 @@
+body {
+    font-family: "FunnelDisplay";
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-style: normal;
+    scroll-behavior: smooth;
+    background-color: rgb(56, 2, 35);
+    color: white;
+    overflow: auto;
+    
+}
+
+
+.content {
+    margin: 64px;
+    padding-bottom: 64px;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+    font-style: oblique;
+    color: aquamarine;
+}
+
+/* Rsponsive */
+
+@media (max-width: 550px){
+    .content {
+        text-align: center;
+    }
+
+    h1{
+        font-size: 28px;
+        text-align: center;
+    }
+
+    h2{
+        font-size: 22px;
+        text-align: center;
+    }
+
+    ul{
+        text-align: left;
+    }
+}
+
+@media (max-width: 400px){
+    h1{
+        font-size: 20px;
+    }
+
+    h2{
+        font-size: 18px;
+    }
+}
